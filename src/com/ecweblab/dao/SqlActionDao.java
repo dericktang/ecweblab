@@ -16,7 +16,7 @@ public interface SqlActionDao {
 	 * @param sqlobj
 	 * @return
 	 */
-	public ArrayList<HashMap> getSqlList(String sql)throws SQLException;
+	public List getSqlList(String sql)throws SQLException;
 	
 	/*
 	 * 查询对象
