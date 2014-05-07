@@ -16,9 +16,9 @@ import com.ecweblab.service.SqlActionResultService;
 public class SqlActionResultDaoImpl implements SqlActionDao {
 
 	@Override
-	public ArrayList<HashMap> getSqlList(String sql) {
+	public List getSqlList(String sql) {
 		// 这里可以放入缓存了
-		ArrayList<HashMap> list = (ArrayList<HashMap>) new SessionMap()
+		List list = (ArrayList<HashMap>) new SessionMap()
 				.get("list");
 		if (list == null) {
 			list = new SqlActionResultService().getSqlList(sql);
